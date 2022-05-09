@@ -45,9 +45,9 @@ void Game::ComposeFrame()
 	for(int i = 0; i < Width; i++)
 		for (int j = 0; j < Height; j++)
 		{
-			r = (i + j) % 256;
-			g = (i * j) % 256;
-			b = 255 - (abs((i - j) * (i + j)) % 256);
-			gfx.PutPixel(i, j, r, g, b);
+			gfx.PutPixel(i, j, 
+				((i - 200) * (i - 200) + (j - 200) * (j - 200)) / 280, 
+				((i - 500) * (i - 500) + (j - 480) * (j - 480)) / 180,
+				((i - 400) * (i - 400) + (j - 100) * (j - 100)) /  80);
 		}
 }

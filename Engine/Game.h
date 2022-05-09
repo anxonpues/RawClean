@@ -42,11 +42,6 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	int x;
-	int y;
-	int r;
-	int g;
-	int b;
 	static constexpr int Width = Graphics::ScreenWidth;
 	static constexpr int Height = Graphics::ScreenHeight;
 	/********************************/
